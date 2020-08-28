@@ -1,0 +1,20 @@
+// Configuracion inicial del servidor aqui ..!!
+
+const http = require('http');
+const app = require('../server'); // The express app we just created
+//const cors = require("cors");
+
+// const port = parseInt(process.env.PORT, 10) || 8000;
+const port = process.env.PORT || 3000;
+
+// MIDDLEWARE 
+//app.use(cors(corsOptions));
+//const corsOptions = {
+//     origin: `http://localhost:${port}`
+//};
+
+app.set('port', port);
+const server = http.createServer(app);
+server.listen(port, () => {
+  console.log(`The server is running at localhost:${port}`);
+});

@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "masterkey",
+    "database": "bd_central",
+    "host": "127.0.0.1",
+    "schema": "sc_catalogos",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "masterkey",
+    "database": "bd_central",
+    "host": "127.0.0.1",
+    "schema": "sc_catalogos",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "masterkey",
+    "database": "bd_central",
+    "host": "127.0.0.1",
+    "schema": "sc_catalogos",
+    "dialect": "postgres"
+  }
+}
